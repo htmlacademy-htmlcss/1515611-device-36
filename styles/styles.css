@@ -26,6 +26,10 @@ html {
   height: 100%;
 }
 
+::before, ::after {
+  box-sizing: border-box;
+}
+
 .body-container {
   display: flex;
   justify-content: center;
@@ -100,8 +104,9 @@ html {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  line-height: 21,13px;
-  letter-spacing: 20%;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .titles-font {
@@ -125,14 +130,26 @@ html {
   line-height: 30px;
 }
 
+.navigation-font {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 
 /*Header*/
+
+.popover, .slider-screen, .rare-goods-modal{
+  display: none;
+}
 
 .header-wrapper {
   background-color: #FFE17F;
   min-height: 175px;
   position: relative;
-  padding: 0 60px;
+  margin: 0 auto;
+  width: 1160px;
 }
 
 .header-wrapper::before {
@@ -160,46 +177,127 @@ html {
   position: relative;
   margin-bottom: 30px;
   z-index: 1;
+  left: 60px;
 }
 
 .navigation {
   display:flex;
   flex-wrap: wrap;
+  padding: 0 59px;
+}
+
+.navigation-form-container {
+  margin-top: -10px;
 }
 
 .user-menu {
   display: flex;
   padding: 0;
   margin: 0;
+  margin-top: -4px;
   flex: 1;
   flex-wrap: wrap;
   gap: 18px;
 }
 
+.user-compare {
+  position: relative;
+}
+
+.user-compare::before {
+  content:"";
+  position: absolute;
+  background-image: url("../images/icons/compare.svg");
+  width: 10px;
+  height: 12px;
+  right: 96px;
+  bottom: 14px;
+}
+
+.user-login {
+  position: relative;
+}
+
+.user-login::before {
+  content:"";
+  position: absolute;
+  background-image: url("../images/icons/user.svg");
+  width: 13px;
+  height: 12px;
+  left: -20px;
+  bottom: 15px;
+}
 .main-menu-container {
   width:100%;
   display: flex;
+  flex-direction: column;
 }
 
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-right: 65px;
+  margin-top: 2px;
+  padding-bottom: 42px;
+ }
+
 .catalog-list-wrapper {
+  display: flex;
   position: absolute;
+  flex-direction: row;
   background:#FFE17F;
-  width: 100%;
+  width: calc(100% - 118px);
   left: 0;
-  display: grid;
-  grid-row: 1;
+  padding: 1px 59px;
+  top: 196px;
+}
+
+.catalog-link-button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  padding: 0;
+  margin:-4px;
+  cursor: pointer;
+  opacity: 0.3;
+  background-color: #FFE17F;
+  transform: translateX(17px)translateY(-8px);
+}
+
+.catalog-link-button::before {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  content:"";
+  background-image: url(../images/icons/plus.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-service-wrapper {
+ display: flex;
+ flex-wrap: wrap;
+
 }
 
 .main-menu-list {
   display: flex;
-  margin: 0;
+  margin-top: 42px;
   padding: 0;
-  gap: 47px;
+  gap: 43px;
 }
 
 .catalog-container {
   flex: 1;
-  grid-template-rows: 1fr 1fr 2fr;
+  margin-top: 42px;
 }
 
 .user-login {
@@ -207,35 +305,197 @@ html {
   margin-left: 40px;
 }
 
-.popover, .slider-screen, .rare-goods-modal{
-  display: none;
-}
-
-.user-menu {
-  display: flex;
+.form-search {
+  box-sizing: border-box;
 }
 
 .form-search input {
   min-width: 359px;
+  border-radius: 50px 0 0 50px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  border: 2px solid #000000;
+  transform: translateX(-2px)translateY(-0.5px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.welcome {
-  background-color:burlywood;
+.form-search button {
+  min-width: 160px;
+  height: 40px;
+  border-radius: 0 50px 50px 0;
+  border: 2px solid #000000;
+  padding: 0;
+  margin: 0;
+  border-left: none;
+  transform: translateX(-7px)translateY(1px);
 }
+
+::placeholder {
+padding: 20px;
+}
+
+.page-container {
+  width: 1440px;
+}
+
+.user-compare {
+  margin-right: 44px;
+}
+
+.user-cart {
+}
+
+/*MAIN*/
+
+/*Slider*/
+
+.slider-text-container {
+  width: 560px;
+  height: 401px;
+  margin-left: 140px;
+}
+
+.slider-text-title {
+  margin-top: 76px;
+  margin-bottom: 28px;
+}
+
+.slider-link {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  transform: translateX(38px)translateY(57px);
+}
+
+.slider-link::before {
+  content:"";
+  width: 30px;
+  height: 3px;
+  background-color: #FFE17F;
+
+}
+
+.details {
+  display: flex;
+  padding: 0;
+  margin-top: 77px;
+}
+
+.details-item {
+  list-style-type: none;
+  margin-left: 21px;
+}
+
+.details-text {
+  margin-bottom: 11px;
+}
+.details-item:first-child {
+  margin-left: 0;
+}
+
+.slider-description {
+  margin: 0;
+}
+
+.slider-screen-wrapper {
+  display: flex;
+}
+
+.slider-list {
+  list-style-type: none;
+}
+
+.slider-bullets {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  list-style-type: none;
+  transform: translateX(-1px)translateY(-99px);
+}
+
+.slider-image {
+  transform:translateX(98px)translateY(-44px);
+}
+
+.details-name {
+  display: inline-block;
+  margin-top:0;
+}
+
+.bullet {
+  list-style-type: none;
+  width: 13px;
+  height: 13px;
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*Gadgets*/
+
+.gadgets-list {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 .gadgets {
-  background-color:lightpink;
+  width: 1160px;
+  margin: 0 auto;
 }
+
+.gadgets-list-item {
+  width: 160px;
+}
+
+.gadget-details {
+  text-decoration: none;
+}
+
+.gadget-details-image {
+  height: 160px;
+  background-color: #FFE17F;
+}
+
+.gadget-vr {
+  background-image: url('../images/index-catalog-images/vr-glasses.svg');
+}
+
+.gadget-monopod {
+  background-image: url("../images/index-catalog-images/selfie-stick.svg");
+}
+
+.gadget-camera {
+  background-image: url("../images/index-catalog-images/camera.svg");
+}
+
+.gadget-bracelet {
+  background-image: url("../images/index-catalog-images/fitness-watches.png");
+}
+
+.gadget-watch {
+  background-image: url("../images/index-catalog-images/smartwatches.png");
+}
+
+.gadget-quadrocopter {
+  background-image: url("..//images/index-catalog-images/quadrocopter.png");
+}
+
+.gadgets-description {
+  margin: 0;
+  margin-top: 32px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: black;
+}
+
 .services {
   background-color:cornflowerblue;
 }
