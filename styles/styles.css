@@ -278,7 +278,7 @@ html {
   list-style-type: none;
  }
 
-.catalog-list-wrapper {  /*Исправить всё, после удаления divoв и br*/
+.catalog-list-wrapper {
   display: flex;
   position: absolute;
   flex-direction: row;
@@ -287,6 +287,16 @@ html {
   left: 0;
   padding: 1px 59px;
   top: 196px;
+}
+
+.catalog-list-wrapper::after {
+  content:"";
+  position: absolute;
+  background-image: url("../images/icons/01.svg");
+  width: 192px;
+  height: 130px;
+  right: 62px;
+
 }
 
 .catalog-link-button {
