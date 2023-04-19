@@ -101,8 +101,10 @@ html {
 .address-form-details-font {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-style: normal;
+  margin-bottom: 0;
 }
 
 .buttons-links-font {
@@ -183,6 +185,7 @@ html {
   margin-bottom: 30px;
   z-index: 1;
   left: 60px;
+  cursor: pointer;
 }
 
 .navigation {
@@ -205,7 +208,7 @@ html {
 .user-login-link {
   position: relative;
   display: inline-block;
-  padding-left: 26px;
+  padding-left: 14px;
 }
 
 .user-login-link::before {
@@ -214,7 +217,7 @@ html {
   background-image: url("../images/icons/user.svg");
   width: 13px;
   height: 12px;
-  left: 0;
+  left: -12px;
   top: 9px;
 }
 
@@ -782,7 +785,7 @@ html {
   background-color: #000000;
   z-index: -1;
   left: 1px;
-  bottom: 90px;
+  bottom: 92px;
 }
 
 .company-info-text {
@@ -819,18 +822,280 @@ html {
   bottom: 6px;
 }
 
-
-
-
+/* Company-contacts*/
 
 .company-contacts {
-  background-color: darkseagreen;
+  margin-top: 74px;
+  margin-left: 144px;
 }
+
+.company-contacts-heading {
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.company-info-heading {
+  margin-bottom: -5px;
+}
+
+.address-tel {
+  text-decoration: underline;
+}
+
+.company-timetable-heading {
+  margin-top: 32px;
+}
+
+.company-schedule {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: -10px;
+  margin-bottom: 35px;
+}
+
+.contact-us-button {
+  margin-left: 36px;
+  position: relative;
+}
+
+.contact-us-button::before {
+  content: "";
+  position: absolute;
+  width: 259px;
+  height: 8px;
+  background-color: #FFE17F;
+  z-index: -1;
+  right: -30px;
+  bottom: 5px;
+}
+
+.company-contacts-heading::before {
+  content: "";
+  position: absolute;
+  width: 83px;
+  height: 7px;
+  background-color: #000000;
+  z-index: -1;
+  left: 3px;
+  bottom: 92px;
+}
+
+/*Subscription*/
 
 .subscription {
-  background-color: aquamarine;
+  background-color: #EBEBEB;
+  min-height: 421px;
+  margin-top: 111px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 116px 11px 9px;
+  margin-top: 75px;
+  padding-top: 23px;
+  padding-left: 27px;
 }
 
+.subscription-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.subscription-text {
+  padding: 35px;
+  margin-left: 216px;
+}
+
+.subscription-text-container {
+  display: flex;
+
+}
+
+.subscription-form-container {
+  display: flex;
+  margin-top: 89px;
+}
+
+.subscription-field {
+  display: flex;
+  margin-right: 221px;
+
+}
+
+.field {
+  position: relative;
+  width: 552px;
+  font-family: "Rubik", sans-serif;
+  min-height: 57px;
+  padding: 2px 0 0 10px;
+  margin: 0;
+  border: 2px solid #C4C4C4;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-left: none;
+  border-top: none;
+}
+
+.subscription-button {
+  width: 251px;
+  min-height: 40px;
+  border: 3px solid #C4C4C4;
+  margin: 0;
+  border-left: none;
+  display: block;
+  padding: 5px 6px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.free-subscription-text {
+  margin-top: 14px;
+  position: relative;
+}
+
+.free-subscription-text::before {
+  content:"";
+  position: absolute;
+  background-image: url("..//images/icons/tick.png");
+  width: 14px;
+  height: 14px;
+  right: 146px;
+  bottom: 22px;
+
+}
+
+/*Footer*/
+
 .footer {
-  background-color: blanchedalmond;
+  background-color: #444444;
+}
+
+.footer-logo {
+  margin-bottom: 7px;
+}
+.footer-wrapper-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper-lower {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -21px;
+  margin-bottom: 61px;
+}
+
+.footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  margin-top: 63px;
+}
+
+.footer-social-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  column-gap: 16px;
+}
+
+.footer-social-link {
+  position: relative;
+}
+
+.footer-social-link::before {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.footer-wrapper-socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 34px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: -54px;
+  margin-top: 23px;
+
+}
+
+.footer-services-link {
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+.tel-link {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #FFFFFF;
+  text-align: right;
+}
+
+.telegram::before {
+  content:"";
+  background-image: url("..//images/social/telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.youtube::before {
+  content:"";
+  background-image: url("..//images/social/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.twitter::before {
+  content:"";
+  background-image: url("..//images/social/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.footer-address {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-style: normal;
+  width: 239px;
+}
+
+.footer-address::after {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #FFC700;
+  display: block;
+  margin-top: 64px;
+}
+
+.tel-link-wrapper {
+  margin-top: 18px;
+}
+
+.site-link-wrapper {
+  right: 0;
+  position: absolute;
 }
