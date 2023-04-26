@@ -95,7 +95,7 @@ html {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  letter-spacing: -0.02em;
+  letter-spacing: -2%;
 }
 
 .address-form-details-font {
@@ -615,7 +615,7 @@ html {
   width: 1160px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
+  z-index:1;
 }
 
 .service-screen::before {
@@ -646,7 +646,7 @@ html {
 }
 
 .service-screen .titles-font {
-  margin-bottom: 34px;
+ margin-bottom: 34px;
 }
 
 .service-screen {
@@ -657,7 +657,7 @@ html {
   list-style-type: none;
   align-items: flex-start;
   padding: 0 208px 0 37px;
-  z-index: 5;
+  z-index:5;
 }
 
 .services-list-item {
@@ -686,7 +686,7 @@ html {
   background-color: #FFE17F;
   left: -16px;
   bottom: 3px;
-  z-index: -1;
+  z-index:-1;
 
 }
 
@@ -702,7 +702,7 @@ html {
   background-color: #000000;
   left: -16px;
   bottom: -8px;
-  z-index: -1;
+  z-index:-1;
 }
 
 .services-list::before {
@@ -712,7 +712,7 @@ html {
   height: 320px;
   left: 280px;
   background-color: #000000;
-  z-index: 2;
+  z-index:2;
 }
 
 .services-link-active {
@@ -813,7 +813,7 @@ html {
   font-size: 25px;
 }
 
-.company-info-details::before {
+.company-info-details::before{
   content: "";
   position: absolute;
   width: 267px;
@@ -962,7 +962,7 @@ html {
 }
 
 .free-subscription-text::before {
-  content: "";
+  content:"";
   position: absolute;
   background-image: url("..//images/icons/tick.png");
   width: 14px;
@@ -981,7 +981,6 @@ html {
 .footer-logo {
   margin-bottom: 7px;
 }
-
 .footer-wrapper-upper {
   display: flex;
   justify-content: space-between;
@@ -1041,7 +1040,7 @@ html {
 
 .footer-services-link {
   text-decoration: none;
-  color: #FFFFFF;
+  color:#FFFFFF;
 }
 
 .tel-link {
@@ -1055,21 +1054,21 @@ html {
 }
 
 .telegram::before {
-  content: "";
+  content:"";
   background-image: url("..//images/social/telegram.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .youtube::before {
-  content: "";
+  content:"";
   background-image: url("..//images/social/youtube.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .twitter::before {
-  content: "";
+  content:"";
   background-image: url("..//images/social/twitter.svg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1171,8 +1170,7 @@ html {
   padding: 0;
 }
 
-.filter-heading,
-.product-sorting-heading {
+.filter-heading, .product-sorting-heading {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -1234,8 +1232,7 @@ html {
   top: -8px;
 }
 
-.from-label,
-.to-label {
+.from-label, .to-label {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -1293,7 +1290,7 @@ html {
   border-color: #000000;
 }
 
-.color-label::before {
+.color-label::before{
   content: "";
   display: inline-block;
   width: 20px;
@@ -1336,7 +1333,7 @@ html {
   margin-bottom: 9px;
 }
 
-.filter-form-bluetooth {
+.filter-form-bluetooth{
   margin-bottom: 17px;
 }
 
@@ -1356,7 +1353,7 @@ html {
   position: relative;
 }
 
-.radio-input:checked + .radio-label::after {
+.radio-input:checked+ .radio-label::after {
   content: "";
   display: block;
   width: 8px;
@@ -1434,7 +1431,7 @@ html {
   justify-self: end;
 }
 
-.sort-up {
+.sort-up{
   display: block;
   box-sizing: content-box;
   width: 11px;
@@ -1490,14 +1487,15 @@ html {
 
 .product-image {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 33px;
   max-width: 100%;
   height: 100%;
 }
 
 .product-name {
   margin: 0;
-  padding: 3px 0 0 0;
+  padding: 0;
+  padding-bottom: 2px;
 }
 
 .cards-button {
@@ -1526,12 +1524,7 @@ html {
   list-style-type: none;
   justify-content: center;
   padding: 0;
-  width: 275px;
-  margin: 17px auto 15px 105px;
-}
-
-.pagination-item {
-
+  column-gap: 8px;
 }
 
 .pagination-list-item {
@@ -1543,8 +1536,7 @@ html {
   opacity: 0.2;
 }
 
-.button-previous,
-.button-next {
+.button-previous, .button-next {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   line-height: 21px;
@@ -1556,15 +1548,8 @@ html {
 .pagination-link {
   text-decoration: none;
   opacity: 0.3;
-  min-width: 40px;
-  height: 40px;
+  padding: 10px 15px;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
-  padding: 0 5px;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
