@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png">
   </head>
 
   <body class="body-container">
@@ -18,7 +18,7 @@
           <nav class="navigation">
             <div class="navigation-form-container">
               <form action="https://echo.htmlacademy.ru/" method="get" class="form-search">
-                <input type="text" class="search-input" class="contact_placeholder" placeholder="Поиск по сайту"
+                <input type="text" class="search-input contact_placeholder" placeholder="Поиск по сайту"
                   aria-label="Поле поиска по сайту" required>
                 <button class="search-button address-form-details-font" type="submit">Найти</button>
               </form>
@@ -60,7 +60,7 @@
                         <span class="purchases-number">2</span>
                       </p>
                       <p class="total-sum">Сумма:
-                        <span class="total-sum-number">2000р</span>
+                        <span class="total-sum-number">2000 ₽</span>
                       </p>
                     </div>
                     <a href="#" class="open-cart">Открыть корзину</a>
@@ -74,7 +74,7 @@
                 <div class="catalog-container">
                   <a href="#" class="catalog-link buttons-links-font">
                     Каталог товаров
-                    <button class="catalog-link-button">
+                    <button class="catalog-link-button" type="button">
                       <span class="visually-hidden">Кнопка открытия каталога товаров</span>
                     </button>
                   </a>
@@ -125,16 +125,13 @@
           </nav>
         </div>
       </header>
-
-
-
       <main>
         <h1 class="visually-hidden">Магазин гаджетов "Девайс"</h1>
         <section class="welcome">
           <h2 class="visually-hidden">Пример товара крупным планом</h2>
           <div class="slider">
             <div class="slider-frame">
-              <ul class="slider-list" style="transform: translateX(0)">
+              <ul class="slider-list">
                 <li class="slider-screen slider-screen-active">
                   <div class="slider-screen-wrapper">
                     <div class="slider-image-container">
@@ -211,8 +208,8 @@
                   </div>
                 </li>
               </ul>
-              <button type="button" class="slider-button slider-previous"></button>
-              <button type="button" class="slider-button slider-next"></button>
+              <button type="button" class="slider-button slider-previous" name="Предыдущий слайд"></button>
+              <button type="button" class="slider-button slider-next" name="Следующий слайд"></button>
             </div>
             <ul class="slider-bullets">
               <li class="bullet-item">
@@ -250,7 +247,7 @@
             <li class="gadgets-list-item">
               <a href="#" class="gadget-details">
                 <div class="gadget-details-image gadget-monopod"></div>
-                <p class="gadgets-description">Моноподы для селфи</p>
+                <p class="gadgets-description">Моноподы для селфи</p>
               </a>
             </li>
             <li class="gadgets-list-item">
@@ -283,13 +280,13 @@
           <div class="services-content">
             <ul class="services-list buttons-links-font">
               <li class="services-list-item">
-                <a class="services-link services-link-active" href="#">Доставка</a>
+                <button class="services-link services-link-active">Доставка</button>
               </li>
               <li class="services-list-item">
-                <a class="services-link" href="#">Гарантия</a>
+                <button class="services-link">Гарантия</button>
               </li>
               <li class="services-list-item">
-                <a class="services-link" href="#">Кредит</a>
+                <button class="services-link">Кредит</button>
               </li>
             </ul>
             <ul class="service-screen">
@@ -315,7 +312,6 @@
           </div>
         </section>
         <a class="rare-goods">
-          <h2 class=" rare-goods-content visually-hidden"></h2>
           <span class="rare-goods-button rare-goods-font">
             <span>Доставим редкий товар под заказ</span>
           </span>
@@ -333,7 +329,7 @@
               <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="modal-name">
                   <label for="input-name" class="modal-input-label modal-person-label">Ваше имя:</label>
-                  <input type="text" class="name-input" id="input-name" placeholder="Введите имя" reqiured>
+                  <input type="text" class="name-input" id="input-name" placeholder="Введите имя" required>
                   <span class="input-error-row"></span>
                 </div>
                 <div class="modal-email">
