@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png">
   </head>
 
   <body class="body-container">
@@ -18,7 +18,7 @@
           <nav class="navigation">
             <div class="navigation-form-container">
               <form action="https://echo.htmlacademy.ru/" method="get" class="form-search">
-                <input type="text" class="search-input" class="contact_placeholder" placeholder="Поиск по сайту"
+                <input type="text" class="search-input contact_placeholder" placeholder="Поиск по сайту"
                   aria-label="Поле поиска по сайту" required>
                 <button class="search-button address-form-details-font" type="submit">Найти</button>
               </form>
@@ -69,7 +69,7 @@
                 <span class="total-sum">Сумма:</span>
                 <span class="total-sum-number">2000р</span>
               </div>
-              <button href="#" class="open-cart">Открыть корзину</button>
+              <button class="open-cart">Открыть корзину</button>
             </section>
 
 
@@ -157,18 +157,20 @@
                   </legend>
                   <div class="range-scale">
                     <div class="range-bar">
-                      <button class="range-switch min" type="button">
+                      <button class="range-switch min" type="button" name="Минимальное значение переключателя">
                       </button>
-                      <button class="range-switch max" type="button">
+                      <button class="range-switch max" type="button" name="Максимальное значение переключателя">
                       </button>
                     </div>
                   </div>
                   <div class="range-scale-wrapper">
-                    <label class="from-label">от
-                      <input class="range-input" type="number" value="0" name="min-price">
+                    <label class="from-label">
+                      <span class="label-text">от</span>
+                      <input class="range-input" type="number" value="0" name="min-price" required>
                     </label>
-                    <label class="to-label">до
-                      <input class="range-input" type="number" value="5000" name="max-price">
+                    <label class="to-label">
+                      <span class="label-text">до</span>
+                      <input class="range-input" type="number" value="5000" name="max-price" required>
                     </label>
                   </div>
                 </fieldset>
@@ -218,9 +220,9 @@
                   </ul>
                 </fieldset>
                 <div>
-                  <a class="filter-button yellow-crossing-btn buttons-links-font" type="submit">
+                  <button class="filter-button yellow-crossing-btn buttons-links-font">
                     <span class="yellow-crossing-btn-caption">Показать</span>
-                  </a>
+                  </button>
                 </div>
               </form>
             </section>
