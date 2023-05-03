@@ -45,6 +45,7 @@ html {
   line-height: 30px;
   color: #444444;
   padding: 22px 0 0;
+  background-color: #ffffff;
 }
 
 .page-container {
@@ -194,6 +195,11 @@ html {
   cursor: pointer;
 }
 
+.nav-logo:focus {
+  outline: 2px solid #af4fff;
+  display: inline-block;
+}
+
 .navigation {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +215,11 @@ html {
 .catalog-link {
   text-decoration: none;
   color: #000000;
+}
+
+.user-menu-link:focus {
+  outline: 2px solid #af4fff;
+  display: inline-block;
 }
 
 .user-login-link {
@@ -315,7 +326,6 @@ html {
 
 .slider-text-title {
   position: relative;
-  z-index: 20;
 }
 
 .catalog-link-button {
@@ -328,6 +338,10 @@ html {
   cursor: pointer;
   background-color: #ffe17f;
   transform: translateX(17px)translateY(-8px);
+}
+
+.catalog-link-button:focus {
+  outline: 2px solid #af4fff;
 }
 
 .catalog-link-button::before {
@@ -511,9 +525,13 @@ html {
   cursor: pointer;
 }
 
+.slider-button:focus {
+  outline: 2px solid #af4fff;
+}
+
 .slider-previous {
   left: 0;
-  background-image: url("./images/icons/arrow-left.svg");
+  background-image: url("../images/icons/arrow-left.svg");
   transform: translate(30px, -73px);
 }
 
@@ -1676,6 +1694,11 @@ html {
   text-decoration: underline;
 }
 
+.address-tel:focus {
+  outline: 2px solid #af4fff;
+  display: inline-block;
+}
+
 .company-timetable-heading {
   margin-top: 32px;
 }
@@ -1810,7 +1833,12 @@ html {
   background-color: #444444;
 }
 
-.footer-logo {
+.footer-logo:focus {
+  outline: 2px solid #af4fff;
+  display: inline-block;
+}
+
+.footer-logo-img {
   margin-bottom: 7px;
 }
 
@@ -1878,6 +1906,11 @@ html {
   color: #ffffff;
 }
 
+.footer-services-link:focus {
+  display: inline-block;
+  outline: 2px solid #af4fff;
+}
+
 .tel-link {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -1886,6 +1919,11 @@ html {
   font-style: normal;
   color: #ffffff;
   text-align: right;
+}
+
+.tel-link:focus {
+  outline: 2px solid #af4fff;
+  display: inline-block;
 }
 
 .telegram::before {
@@ -1937,6 +1975,11 @@ html {
 .site-link-wrapper {
   right: 0;
   position: absolute;
+}
+
+.site-link:focus {
+  outline: 2px solid #af4fff;
+  display: inline-block;
 }
 
 /*CATALOG-PAGE*/
@@ -2058,6 +2101,11 @@ html {
   border-radius: 50%;
   cursor: pointer;
   background-color: #ebebeb;
+}
+
+.range-switch:focus {
+  outline: 2px solid #af4fff;
+
 }
 
 .min {
@@ -2442,21 +2490,13 @@ html {
   color: #ffffff;
 }
 
-.search-button:focus.search-button::after {
-  content: "";
-  display: block;
-  min-width: 160px;
-  min-height: 40px;
-  outline: 2px solid #af4fff;
-  outline-offset: 2px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .search-button:focus-visible,
 .bullet:focus-visible {
   outline: none;
+}
+
+.search-button:focus {
+  outline: 2px solid #af4fff;
 }
 
 .search-button:active {
@@ -2481,6 +2521,10 @@ html {
 .search-input:placeholder-shown {
   background-color: #ffe17f;
   color: #000000;
+}
+
+.search-input:focus {
+  outline: 2px solid #af4fff;
 }
 
 .user-login-link:hover {
@@ -2573,14 +2617,7 @@ html {
   outline: none;
 }
 
-.main-menu-link-active:focus {
-  padding-left: 65px;
-  outline: 2px solid #af4fff;
-  transition: padding 0.3s;
-}
-
 .main-menu-link-active:active {
-  padding-left: 65px;
   transition: padding 0.3s;
   outline: none;
 }
@@ -2628,19 +2665,19 @@ html {
 }
 
 .field:focus {
-  outline: none;
+  outline: 2px solid #af4fff;
   background-color: #dcdcdc;
 }
 
-.footer-logo:hover {
+.footer-logo-img:hover {
   opacity: 0.6;
 }
 
-.footer-logo:focus {
+.footer-logo-img:focus {
   outline: 2px solid #af4fff;
 }
 
-.footer-logo:active {
+.footer-logo-img:active {
   opacity: 0.3;
   outline: none;
   border: none;
@@ -2777,6 +2814,10 @@ html {
   align-items: center;
 }
 
+.yellow-crossing-btn:focus {
+  outline: 2px solid #af4fff;
+}
+
 .product-link-details {
   position: absolute;
   top: 0;
@@ -2801,10 +2842,12 @@ html {
 }
 
 .footer-social-link:focus {
+  display: inline-block;
   outline: 2px solid #af4fff;
 }
 
 .filter-form-color:focus {
+  display: inline-block;
   outline: 2px solid #af4fff;
 }
 
