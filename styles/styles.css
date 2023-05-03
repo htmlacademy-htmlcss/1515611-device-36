@@ -83,7 +83,7 @@ html {
 }
 
 .rare-goods-button {
-  color: black;
+  color: #000000;
   text-decoration: none;
   padding: 0 130px;
   text-align: center;
@@ -208,7 +208,7 @@ html {
 .main-menu-link,
 .catalog-link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
 .user-login-link {
@@ -270,7 +270,7 @@ html {
   top: 6px;
   background-color: #ffffff;
   border-radius: 10px;
-  color: black;
+  color: #000000;
   font-size: 13px;
 }
 
@@ -385,7 +385,7 @@ html {
 }
 
 .catalog-container:hover .catalog-link-button::before {
-  color: black;
+  color: #000000;
   opacity: 1;
   background-image: url("../images/icons/circle-minus.svg");
 }
@@ -554,16 +554,16 @@ html {
 }
 
 .slider-screen:nth-child(1) .slider-text-container::before {
-  background-image: url(../images/icons/01.svg);
+  background-image: url("../images/icons/01.svg");
 }
 
 .slider-screen:nth-child(2) .slider-text-container::before {
-  background-image: url(../images/icons/02.svg);
+  background-image: url("../images/icons/02.svg");
   width: 224px;
 }
 
 .slider-screen:nth-child(3) .slider-text-container::before {
-  background-image: url(../images/icons/03.svg);
+  background-image: url("../images/icons/03.svg");
   width: 230px;
 }
 
@@ -710,7 +710,7 @@ html {
   padding: 0;
   font-weight: 400;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .total-cost {
@@ -869,7 +869,7 @@ html {
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
-  color: black;
+  color: #000000;
   letter-spacing: -0.02em;
 }
 
@@ -967,7 +967,7 @@ html {
   width: 160px;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: #000000;
   height: 100%;
   background: none;
   border: none;
@@ -997,7 +997,7 @@ html {
 
 .services-link-active {
   position: relative;
-  color: #FFE17F;
+  color: #ffe17f;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1033,7 +1033,7 @@ html {
 .service-guarantee::before {
   content: "";
   position: absolute;
-  background-image: url(../images/icons/guarantee.svg);
+  background-image: url("../images/icons/guarantee.svg");
   background-repeat: no-repeat;
   width: 171px;
   height: 195px;
@@ -1044,7 +1044,7 @@ html {
 .service-credit::before {
   content: "";
   position: absolute;
-  background-image: url(../images/icons/credit.svg);
+  background-image: url("../images/icons/credit.svg");
   background-repeat: no-repeat;
   width: 156px;
   height: 188px;
@@ -1471,7 +1471,6 @@ html {
 .tooltip-text {
   display: none;
   margin: 0;
-  padding: 0;
   width: 200px;
   padding: 19px 17px 19px 20px;
   position: absolute;
@@ -1761,7 +1760,7 @@ html {
   min-height: 57px;
   padding: 2px 0 0 10px;
   margin: 0;
-  border: 3px solid #C4C4C4;
+  border: 3px solid #c4c4c4;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -1876,7 +1875,7 @@ html {
 
 .footer-services-link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .tel-link {
@@ -1885,7 +1884,7 @@ html {
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: right;
 }
 
@@ -2225,7 +2224,7 @@ html {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: #000000;
   z-index: 1;
   border: none;
 }
@@ -2368,7 +2367,7 @@ html {
   padding: 17px;
   text-align: center;
   text-transform: uppercase;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
 }
 
 .pagination-wrapper {
