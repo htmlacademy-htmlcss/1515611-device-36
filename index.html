@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="images/icons/favicon.png">
   </head>
 
   <body class="body-container">
@@ -72,12 +72,12 @@
             <div class="main-menu-container">
               <div class="catalog-service-wrapper">
                 <div class="catalog-container">
-                  <a href="#" class="catalog-link buttons-links-font">
+                  <div class="catalog-link buttons-links-font">
                     Каталог товаров
                     <button class="catalog-link-button" type="button">
                       <span class="visually-hidden">Кнопка открытия каталога товаров</span>
                     </button>
-                  </a>
+                  </div>
                   <div class="catalog-list-wrapper navigation-font">
                     <ul class="catalog-list">
                       <li class="catalog-item">
@@ -168,7 +168,9 @@
                       <h3 class="titles-font slider-text-title">Худеем правильно</h3>
                       <p class="slider-description">Мотивирующие фитнес-браслеты помогут найти в себе силы
                         не пропускать занятия и соблюдать диету.</p>
-                      <a href="#" class="slider-link buttons-links-font">Подробнее</a>
+                      <a href="#" class="yellow-crossing-btn buttons-links-font">
+                        <span class="yellow-crossing-btn-caption">Подробнее</span>
+                      </a>
                       <ul class="details">
                         <li class="details-item">
                           <p class="details-text numbers-font">48 часов</p>
@@ -189,7 +191,9 @@
                       </h3>
                       <p class="slider-description">Самая длинная палка для селфи доступна в нашем магазине.
                         Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.</p>
-                      <a href="#" class="slider-link buttons-links-font">Подробнее</a>
+                      <a href="#" class="yellow-crossing-btn buttons-links-font">
+                        <span class="yellow-crossing-btn-caption">Подробнее</span>
+                      </a>
                       <ul class="details">
                         <li class="details-item">
                           <p class="details-text numbers-font">8,5 м</p>
@@ -280,13 +284,13 @@
           <div class="services-content">
             <ul class="services-list buttons-links-font">
               <li class="services-list-item">
-                <button class="services-link services-link-active">Доставка</button>
+                <button type="button" class="services-link services-link-active">Доставка</button>
               </li>
               <li class="services-list-item">
-                <button class="services-link">Гарантия</button>
+                <button type="button" class="services-link">Гарантия</button>
               </li>
               <li class="services-list-item">
-                <button class="services-link">Кредит</button>
+                <button type="button" class="services-link">Кредит</button>
               </li>
             </ul>
             <ul class="service-screen">
@@ -345,8 +349,9 @@
                 <div class="modal-buttons-wrapper">
                   <label class="quantity-label" for="quantity-input">Количество:</label>
                   <button class="tooltip" type="button">
-                    <p class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
-                      к провозу багажа.</p>
+                    <span class="tooltip-text">Постараемся найти, сколько нужно. Привезём сколько получится по
+                      требованиям
+                      к провозу багажа.</span>
                   </button>
                   <div class="modal-buttons">
                     <button class="minus-button" type="button">
@@ -439,8 +444,8 @@
       </main>
       <footer class="footer">
         <div class="footer-wrapper">
-          <a>
-            <img class="footer-logo" src="images/logos/logo-footer.svg" alt="Логотип компании Девайс">
+          <a class="footer-logo" href="index.html">
+            <img class="footer-logo-img" src="images/logos/logo-footer.svg" alt="Логотип компании Девайс">
           </a>
           <div class="footer-wrapper-upper">
             <div>
