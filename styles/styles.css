@@ -1845,6 +1845,7 @@ html {
 .footer-wrapper-upper {
   display: flex;
   justify-content: space-between;
+  margin-top: 4px;
 }
 
 .footer-wrapper-lower {
